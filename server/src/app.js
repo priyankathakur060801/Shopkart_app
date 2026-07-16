@@ -15,7 +15,10 @@ const app = express();
 
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: [
+      "http://localhost:5173",
+      "https://shop-frontend-seven-silk.vercel.app",
+    ],
     credentials: true,
   }),
 );
