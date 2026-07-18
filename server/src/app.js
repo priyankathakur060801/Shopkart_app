@@ -12,7 +12,7 @@ import invoiceRoutes from "./routes/invoiceRoutes.js";
 import path from "path";
 
 const app = express();
-
+app.set("trust proxy", 1);
 app.use(
   cors({
     origin: [
