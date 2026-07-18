@@ -109,7 +109,7 @@ Swal.fire({
               >
                 <CardMedia
                   component="img"
-                  image={`http://localhost:5000/uploads/${product.images[0]}`}
+                  image={`${import.meta.env.VITE_BACKEND_URL}/uploads/${product.images[0]}`}
                   sx={{
                     height: 500,
                     objectFit: "contain",

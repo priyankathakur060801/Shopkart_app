@@ -238,7 +238,7 @@ const Products = () => {
                  component="img"
                  image={
                    product.images.length
-                     ? `http://localhost:5000/uploads/${product.images[0]}`
+                     ? `${import.meta.env.VITE_BACKEND_URL}/uploads/${product.images[0]}`
                      : "https://via.placeholder.com/500"
                  }
                  alt={product.name}

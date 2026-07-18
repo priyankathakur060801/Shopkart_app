@@ -131,7 +131,7 @@ const remove = async (id) => {
              >
                <CardMedia
                  component="img"
-                 image={`http://localhost:5000/uploads/${item.product.images[0]}`}
+                 image={`${import.meta.env.VITE_BACKEND_URL}/uploads/${item.product.images[0]}`}
                  sx={{
                    width: {
                      xs: 90,

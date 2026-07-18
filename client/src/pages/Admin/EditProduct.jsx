@@ -240,7 +240,7 @@ function EditProduct() {
             >
               <Box
                 component="img"
-                src={`http://localhost:5000/uploads/${product.images[0]}`}
+                src={`${import.meta.env.VITE_BACKEND_URL}/uploads/${product.images[0]}`}
                 sx={{
                   width: 220,
 

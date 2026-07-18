@@ -114,7 +114,7 @@ function AdminOrders() {
                   mt={2}
                 >
                   <img
-                    src={`http://localhost:5000/uploads/${item.image}`}
+                    src={`${import.meta.env.VITE_BACKEND_URL}/uploads/${item.image}`}
                     width="60"
                     height="60"
                     style={{

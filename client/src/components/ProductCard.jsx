@@ -79,7 +79,7 @@ Swal.fire({
          height="250"
          image={
            product.images?.length
-             ? `http://localhost:5000/uploads/${product.images[0]}`
+             ? `${import.meta.env.VITE_BACKEND_URL}/uploads/${product.images[0]}`
              : "https://via.placeholder.com/300x220?text=No+Image"
          }
          alt={product.name}
